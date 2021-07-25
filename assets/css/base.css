@@ -15,3 +15,13 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

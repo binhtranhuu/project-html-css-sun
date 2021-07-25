@@ -1,0 +1,159 @@
+/* Header top */
+.header__top {
+  background-color: #fafafa;
+}
+
+.header__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-left {
+  padding-left: 0;
+}
+
+.header__phone:hover {
+  color: var(--primary-color);
+}
+
+.header__top-right {
+  display: flex;
+}
+
+.header__social-icon {
+  display: flex;
+}
+
+.header__social-item {
+  padding: 0 10px;
+}
+
+.header__social-item a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+.header__top-left,
+.header__top-right,
+.header__social-icon {
+  list-style: none;
+}
+
+.header__phone {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header__login {
+  margin-left: 2rem;
+}
+
+.header__login-link {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header__login-link:hover {
+  color: var(--primary-color);
+}
+
+.header__login-link i {
+  padding-right: 10px;
+}
+
+.header__money {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__money:hover .header__money-list {
+  display: block;
+}
+
+.header__money-icon {
+  font-size: 1.3rem;
+  padding-left: 4px;
+}
+
+.header__money-list {
+  position: absolute;
+  top: calc(100% + 10px);
+  list-style: none;
+  background-color: var(--white-color);
+  padding: 8px 14px;
+  box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+  display: none;
+  animation: fadeIn linear 0.3s;
+}
+
+.header__money-list::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -20px;
+  left: 0;
+}
+
+.header__money-item {
+  padding: 3px 0;
+}
+
+.header__money-item:hover {
+  color: var(--primary-color);
+}
+
+.header__language {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-left: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__language-icon {
+  font-size: 1.3rem;
+  padding-left: 4px;
+}
+
+.header__language:hover .header__language-list {
+  display: block;
+}
+
+.header__language-list {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  list-style: none;
+  background-color: var(--white-color);
+  padding: 8px 14px;
+  box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+  display: none;
+  animation: fadeIn linear 0.3s;
+}
+
+.header__language-list::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -20px;
+  left: 0;
+}
+
+.header__language-item {
+  padding: 3px 0;
+}
+
+.header__language-item:hover {
+  color: var(--primary-color);
+}
