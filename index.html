@@ -83,27 +83,47 @@
 
         <nav class="header__middle">
           <div class="grid wide">
-            <div class="header__middle-left">
-              <form action="">
-                <button><i class="fas fa-search"></i></button>
-                <input type="text" class="header__search-input" placeholder="Search product..." />
-              </form>
-            </div>
-            <div class="header__middle-center">
-              <div class="header__logo">
-                <a href="" class="header__logo-link">
-                  <img src="./assets/img/logo.png" alt="Logo" class="header__logo-img">
-                </a>
+            <div class="header__middle-wrap">
+              <div class="header__middle-left">
+                <div class="header__search">
+                  <form action="">
+                    <button class="header__search-button">
+                      <i class="header__search-icon fas fa-search"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="header__search-input"
+                      placeholder="Search product ..."
+                    />
+                  </form>
+                </div>
               </div>
-            </div>
-            <div class="header__middle-right">
-              <div class="header__wishlist">
-                <i class="far fa-heart header__wishlist-icon"></i>
-                <span class="header__wishlist-text">My Wishlist</span>
+              <div class="header__middle-center">
+                <div class="header__logo">
+                  <a href="" class="header__logo-link">
+                    <img
+                      src="./assets/img/logo.png"
+                      alt="Logo"
+                      class="header__logo-img"
+                    />
+                  </a>
+                </div>
               </div>
-              <div class="header__cart">
-                <i class="header__cart-icon fas fa-shopping-cart"></i>
-                <span class="header__cart-text">$0.00</span>
+              <div class="header__middle-right">
+                <div class="header__wishlist">
+                  <a href="" class="header__wishlist-link">
+                    <i class="far fa-heart header__wishlist-icon"></i>
+                    <span class="header__wishlist-count">3</span>
+                    <span class="header__wishlist-text">My Wishlist</span>
+                  </a>
+                </div>
+                <div class="header__cart">
+                  <a href="" class="header__cart-link">
+                    <i class="header__cart-icon fas fa-shopping-cart"></i>
+                    <span class="header__cart-count">3</span>
+                    <span class="header__cart-text">$0.00</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
