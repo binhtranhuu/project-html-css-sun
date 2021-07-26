@@ -29,6 +29,12 @@
   padding: 0 10px;
 }
 
+.header__social-item i {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #777;
+}
+
 .header__social-item a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -46,6 +52,10 @@
   font-weight: 300;
   text-decoration: none;
   color: var(--text-color);
+}
+
+.header__phone i {
+  font-size: 1.6rem;
 }
 
 .header__login {
@@ -381,7 +391,7 @@
 }
 
 .header__cart-item-remove-button {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #999;
 }
 
@@ -448,6 +458,8 @@
 
 .header__bottom-right > span > i {
   margin-right: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .header__bottom-item-link {
@@ -540,6 +552,10 @@
 }
 
 /* Body */
+.app__container {
+  margin-top: -3px;
+}
+
 .intro {
   background-color: #fafafa;
   padding-top: 3rem;
