@@ -1081,5 +1081,60 @@
 
 /* Home Subscribe */
 .home__subscribe {
+  text-align: center;
+  margin-bottom: 6.5rem;
+  padding: 4rem 0 5rem 0;
   background-image: url("https://d-themes.com/react/molla/demo-17/images/home/bg-1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.subscribe__info-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin: 1rem 0 0.7rem 0;
+}
+
+.subscribe__info-sub-title {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe__form-input {
+  padding: 0.85rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+  background: #fff;
+  flex: 1;
+}
+
+.subscribe__form-button {
+  color: #fff;
+  background-color: #19b395;
+  border-color: #19b395;
+  min-width: 140px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.subscribe__form-button span {
+  text-transform: uppercase;
+  font-weight: 500;
 }
