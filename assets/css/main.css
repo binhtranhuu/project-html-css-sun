@@ -712,11 +712,15 @@
 
 /* Product */
 
+.home__product {
+  display: block;
+}
+
 .home__product-title {
   text-align: center;
   font-weight: 700;
   font-size: 2.2rem;
-  margin-bottom: 0 0 1.5rem 0;
+  margin: 0 0 2.8rem 0;
 }
 
 .product {
@@ -1026,60 +1030,56 @@
   text-decoration: line-through;
 }
 
+/* Product tab */
 .product__tabs {
-  position: relative;
-  margin: 3rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
 }
 
-.product__tabs-item label {
+#product__tabs-new,
+#product__tabs-featured,
+#product__tabs-best-seller {
+  display: none;
+}
+
+#product__tabs-new ~ .product__tab,
+#product__tabs-featured ~ .product__tab,
+#product__tabs-best-seller ~ .product__tab {
+  display: none;
+}
+
+#product__tabs-new:checked ~ .product__tab.product__tab-new,
+#product__tabs-featured:checked ~ .product__tab.product__tab-featured,
+#product__tabs-best-seller:checked ~ .product__tab.product__tab-best-seller {
+  display: block;
+}
+
+#product__tabs-new + label,
+#product__tabs-featured + label,
+#product__tabs-best-seller + label {
   color: #333;
-  padding: 10px;
-  font-weight: 500;
-  margin-left: -1px;
-  position: relative;
   font-size: 1.3rem;
-  left: 1px;
+  font-weight: 500;
+  padding: 10px 12px;
+  margin-bottom: 3rem;
+  position: relative;
+  top: 1px;
 }
 
-.product__tabs-item [type="radio"] {
-  display: none;
-}
-
-[type="radio"] ~ label ~ .product__tabs-content {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.product__tabs-content {
-  position: absolute;
-  top: 2.8rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 3rem;
-  background-color: transparent;
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-}
-
-[type="radio"]:checked ~ label {
-  background: white;
+#product__tabs-new:checked + label,
+#product__tabs-featured:checked + label,
+#product__tabs-best-seller:checked + label {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
-  z-index: 2;
 }
 
-[type="radio"]:checked ~ label ~ .product__tabs-content {
-  z-index: 10;
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
-  transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+#product__tabs-new ~ .product__tab,
+#product__tabs-featured ~ .product__tab,
+#product__tabs-best-seller ~ .product__tab {
+  padding-top: 3rem;
+  text-align: left;
+}
+
+/* Home Subscribe */
+.home__subscribe {
+  background-image: url("https://d-themes.com/react/molla/demo-17/images/home/bg-1.jpg");
 }

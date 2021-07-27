@@ -472,17 +472,15 @@
             <h2 class="home__product-title">Currently Popular Items</h2>
 
             <div class="product__tabs">
-              <div class="product__tabs-item">
-                <input
-                  type="radio"
-                  id="product__tabs-new"
-                  name="tab-group-1"
-                  checked
-                />
-                <label for="product__tabs-new">NEW</label>
+              <input type="radio" name="tabs" id="product__tabs-new" checked />
+              <label for="product__tabs-new">NEW</label>
+              <input type="radio" name="tabs" id="product__tabs-featured" />
+              <label for="product__tabs-featured">FEATURED</label>
+              <input type="radio" name="tabs" id="product__tabs-best-seller" />
+              <label for="product__tabs-best-seller">BEST SELLERS</label>
 
-                <div class="product__tabs-content">
-                  <div class="row">
+              <div class="product__tab product__tab-new">
+                <div class="row">
                     <div class="col l-3">
                       <div class="product">
                         <figure class="product__media">
@@ -990,20 +988,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
-
-              <div class="product__tabs-item">
-                <input
-                  type="radio"
-                  id="product__tabs-featured"
-                  name="tab-group-1"
-                />
-                <label for="product__tabs-featured">FEATURED</label>
-
-                <div class="product__tabs-content">
-                  <div class="row">
-                    
+              <div class="product__tab product__tab-featured">
+                <div class="row">
                     <div class="col l-3">
                       <div class="product">
                         <figure class="product__media">
@@ -1131,7 +1118,6 @@
                         </div>
                       </div>
                     </div>
-                    
 
                     <div class="col l-3">
                       <div class="product">
@@ -1260,7 +1246,7 @@
                         </div>
                       </div>
                     </div>
-                    
+
                     <div class="col l-3">
                       <div class="product">
                         <figure class="product__media">
@@ -1324,19 +1310,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
-
-              <div class="product__tabs-item">
-                <input
-                  type="radio"
-                  id="product__tabs-best-seller"
-                  name="tab-group-1"
-                />
-                <label for="product__tabs-best-seller">BEST SELLERS</label>
-
-                <div class="product__tabs-content">
-                  <div class="row">
+              <div class="product__tab product__tab-best-seller">
+                <div class="row">
                     <div class="col l-3">
                       <div class="product">
                         <figure class="product__media">
@@ -1589,11 +1565,38 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- End -->
+
+        <!-- Home Subscribe -->
+        <div class="home__subscribe">
+          <div class="grid wide">
+            <div class="subscribe">
+              <div class="subscribe__info">
+                <h3 class="subscribe__info-title">
+                  Sign up for email & get 25% off
+                </h3>
+                <p class="subscribe__info-sub-title">
+                  Subcribe to get information about products and coupons
+                </p>
+              </div>
+              <form class="subscribe__form">
+                <input
+                  type="text"
+                  class="subscribe__form-input"
+                  placeholder="Enter your Email Address"
+                />
+                <button class="subscribe__form-button">
+                  <span>Subscribe</span> <i class="las la-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
       </div>
     </div>
   </body>
