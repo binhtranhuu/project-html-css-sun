@@ -559,6 +559,7 @@
 .intro {
   background-color: #fafafa;
   padding-top: 3rem;
+  margin-bottom: 4.5rem;
 }
 
 .banner__big,
@@ -707,4 +708,320 @@
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0.4rem 0 0 0;
+}
+
+/* Product */
+
+.home__product-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 0 0 1.5rem 0;
+}
+
+.product {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.product:hover .product__action-vertical {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.product:hover .product__action,
+.product:focus .product__action {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.product:hover .product__image-hover {
+  opacity: 1;
+}
+
+.product__media {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  display: block;
+  margin: 0;
+}
+
+.product__media .product__label {
+  z-index: 3;
+}
+
+.product__label {
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 2rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  padding: 0.5rem 0.9rem;
+  min-width: 45px;
+  text-align: center;
+  color: #333;
+  background-color: var(--white-color);
+}
+
+.product__label + .product__label {
+  top: 5rem;
+}
+
+.product__label + .product__label + .product__label {
+  top: 8rem;
+}
+
+.product__label + .product__label + .product__label + .product__label {
+  top: 11rem;
+}
+
+.product__label.product__label--new {
+  color: #fff;
+  background-color: #a6c76c;
+}
+
+.product__label.product__label--sale {
+  color: #fff;
+  background-color: #ef837b;
+}
+
+.product__label.product__label--top {
+  color: #fff;
+  background-color: #7dd2ea;
+}
+
+.product__label.product__label--out {
+  color: #fff;
+  background-color: #ccc;
+}
+
+.product__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product__image-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.product__link {
+  text-decoration: none;
+  display: block;
+}
+
+.product__action-vertical {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background-color: transparent;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
+}
+
+.product__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.product__icon:not(:hover):not(:focus) {
+  color: #333;
+}
+
+.product__icon:hover,
+.product__icon:focus {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.product__icon + .product__icon {
+  margin-top: 1rem;
+}
+
+.product__icon-wishlist {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.product__icon-quickview {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.product__icon--expand {
+  position: relative;
+}
+
+.product__icon--expand span {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  line-height: 3rem;
+  align-items: center;
+  display: flex;
+  font-weight: 300;
+  font-size: 1.1rem;
+  min-width: 100px;
+  padding-left: 1.8rem;
+  padding-right: 0.4rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  visibility: hidden;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+  z-index: -1;
+}
+
+.product__icon--expand:hover span,
+.product__icon--expand:focus span {
+  color: var(--white-color);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: var(--primary-color);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(2px);
+  transform: translateX(12px);
+}
+
+.product__action {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.95);
+  z-index: 10;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.product__cart {
+  font-size: 1.4rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.09);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.product__cart:hover,
+.product__cart:focus {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.product__body {
+  position: relative;
+  padding: 1.6rem 0 2rem 0;
+}
+
+.product__cat {
+  margin-bottom: 0.3rem;
+  overflow: hidden;
+  color: #ccc;
+}
+
+.product__cat-link {
+  color: #777;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__title {
+  margin: 0 0 1rem 0;
+}
+
+.product__title-link {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+
+.product__title-link:hover {
+  color: var(--primary-color);
+}
+
+.product__price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #c96;
+  font-size: 1.4rem;
+}
+
+.product__price-new {
+  color: #ef837b;
+  font-weight: 500;
+  margin-right: 0.8rem;
+  display: block;
+}
+
+.product__price-old {
+  color: #ccc;
+  margin-top: 0.3rem;
+  display: block;
+  text-decoration: line-through;
 }
