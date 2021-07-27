@@ -61,3 +61,8 @@ html {
   color: #212529;
   background-color: var(--white-color);
 }
+
+.btn.btn--outline {
+  padding: 1.15rem 1.5rem;
+  text-transform: uppercase;
+}

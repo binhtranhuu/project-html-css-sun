@@ -1138,3 +1138,159 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+
+/* Home Posts */
+.home__posts {
+}
+
+.home__posts-info {
+  text-align: center;
+}
+
+.home__posts-title {
+  margin: 0 0 0.8rem 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.home__posts-desc {
+  color: #777;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.home__post {
+  /* position: relative; */
+}
+
+.home__post-image {
+  position: relative;
+  margin: 0 0 1.6rem 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+.home__post-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.35s ease;
+}
+
+.home__post:hover .home__post-image::before {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.home__post-link {
+  display: block;
+  text-decoration: none;
+}
+
+.home__post-image-thumb {
+  width: 100%;
+}
+
+.home__post-body {
+}
+
+.home__post-meta {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.home__post-date {
+  color: #777;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* .home__post-separator {
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+  display: block;
+} */
+
+.home__post-comment {
+  color: #777;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.home__post-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.1rem 0;
+}
+
+.home__post-title a {
+  line-height: 2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.home__post-date:hover,
+.home__post-comment:hover,
+.home__post-title:hover a {
+  color: var(--primary-color);
+}
+
+.home__post-action {
+  margin-top: 5px;
+}
+
+.home__post-read-more {
+  color: #777;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 2rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.home__post-action i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -0.8rem;
+  display: none;
+  transform: translateX(-6px);
+  transition: all 0.25s ease 0s;
+}
+
+.home__post-read-more:focus,
+.home__post-read-more:hover {
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  padding-right: 2.2rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.home__post-read-more:focus i,
+.home__post-read-more:hover i {
+  color: var(--primary-color);
+  display: block;
+  transform: translateX(0);
+}
+
+.home__posts-more {
+  text-align: center;
+  margin: 5rem 0 5.5rem 0;
+}
+
+.home__posts-more .btn--outline {
+  border-color: #ebebeb;
+  text-decoration: none;
+}
