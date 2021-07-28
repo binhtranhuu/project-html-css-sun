@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Ecommerce Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/fonts/css/line-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Begin Header -->
+      <header class="header">
+        <!-- Begin Header Top -->
+        <nav class="header__top">
+          <div class="grid wide">
+            <div class="header__top-wrap">
+              <ul class="header__top-left">
+                <li class="header__top-left-item">
+                  <a href="#" class="header__phone"
+                    ><i class="las la-phone"></i> Call: +0123 456 789
+                  </a>
+                </li>
+              </ul>
+              <ul class="header__top-right">
+                <li class="header__social">
+                  <ul class="header__social-icon">
+                    <li class="header__social-item">
+                      <a href=""><i class="lab la-facebook-f"></i></a>
+                    </li>
+                    <li class="header__social-item">
+                      <a href=""><i class="lab la-twitter"></i></a>
+                    </li>
+                    <li class="header__social-item">
+                      <a href=""><i class="lab la-instagram"></i></a>
+                    </li>
+                    <li class="header__social-item">
+                      <a href=""><i class="lab la-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__login">
+                  <a href="#" class="header__login-link"
+                    ><i class="fas fa-user"></i> Login</a
+                  >
+                </li>
+                <li class="header__money">
+                  USD <i class="header__money-icon fas fa-angle-down"></i>
+                  <ul class="header__money-list">
+                    <li class="header__money-item">Eur</li>
+                    <li class="header__money-item">Usd</li>
+                  </ul>
+                </li>
+                <li class="header__language">
+                  Eng <i class="header__language-icon fas fa-angle-down"></i>
+                  <ul class="header__language-list">
+                    <li class="header__language-item">English</li>
+                    <li class="header__language-item">English</li>
+                    <li class="header__language-item">English</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End -->
+
+        <!-- Begin Header Middle -->
+        <nav class="header__middle">
+          <div class="grid wide">
+            <div class="header__middle-wrap">
+              <div class="header__middle-left">
+                <div class="header__search">
+                  <form action="">
+                    <button class="header__search-button">
+                      <i class="header__search-icon las la-search"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="header__search-input"
+                      placeholder="Search product ..."
+                    />
+                  </form>
+                </div>
+              </div>
+              <div class="header__middle-center">
+                <div class="header__logo">
+                  <a href="" class="header__logo-link">
+                    <img
+                      src="./assets/img/logo.png"
+                      alt="Logo"
+                      class="header__logo-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="header__middle-right">
+                <div class="header__wishlist">
+                  <a href="" class="header__wishlist-link">
+                    <i class="lar la-heart header__wishlist-icon"></i>
+                    <span class="header__wishlist-count">3</span>
+                    <span class="header__wishlist-text">My Wishlist</span>
+                  </a>
+                </div>
+                <div class="header__cart">
+                  <a href="" class="header__cart-link">
+                    <i class="header__cart-icon las la-shopping-cart"></i>
+                    <span class="header__cart-count">3</span>
+                    <span class="header__cart-text">$0.00</span>
+                  </a>
+
+                  <!-- Use class no cart: header__cart-list--no-cart -->
+                  <div class="header__cart-list">
+                    <p class="header__cart-no-cart-message">
+                      No products in the cart.
+                    </p>
+
+                    <ul class="header__cart-list-item">
+                      <li class="header__cart-item">
+                        <div class="header__cart-item-info">
+                          <a class="header__cart-item-link" href=""
+                            ><h5 class="header__cart-item-name">
+                              The Focus and Accent On Your Spring
+                            </h5></a
+                          >
+                          <span class="header__cart-item-count">1 x </span>
+                          <span class="header__cart-item-price">$333.00</span>
+                        </div>
+                        <a class="header__cart-item-link" href=""
+                          ><img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_1_1_300x408_475d93b97b.jpg"
+                            alt=""
+                            class="header__cart-item-img"
+                        /></a>
+                        <button class="header__cart-item-remove">
+                          <i
+                            class="header__cart-item-remove-button las la-trash"
+                          ></i>
+                        </button>
+                      </li>
+
+                      <li class="header__cart-item">
+                        <div class="header__cart-item-info">
+                          <a class="header__cart-item-link" href=""
+                            ><h5 class="header__cart-item-name">
+                              The Focus and Accent On Your Spring
+                            </h5></a
+                          >
+                          <span class="header__cart-item-count">1 x </span>
+                          <span class="header__cart-item-price">$333.00</span>
+                        </div>
+                        <a class="header__cart-item-link" href=""
+                          ><img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_1_1_300x408_475d93b97b.jpg"
+                            alt=""
+                            class="header__cart-item-img"
+                        /></a>
+                        <button class="header__cart-item-remove">
+                          <i
+                            class="header__cart-item-remove-button las la-trash"
+                          ></i>
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="header__cart-summary">
+                      <div class="header__cart-total">
+                        <span>Total</span>
+                        <span class="header__cart-total-price">$421.00</span>
+                      </div>
+                      <div class="header__cart-action">
+                        <button class="btn btn--primary">View cart</button>
+                        <button class="btn">
+                          Checkout <i class="las la-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End -->
+
+        <!-- Begin Header Bottom -->
+        <nav class="header__bottom">
+          <div class="grid wide">
+            <div class="header__bottom-wrap">
+              <ul class="header__bottom-left">
+                <li class="header__bottom-item">
+                  <a class="header__bottom-item-link" href="">Home</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-item-link" href="">Shop</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-item-link" href=""
+                    >Product
+                    <i class="header__bottom-item-icon las la-angle-down"></i>
+                  </a>
+                </li>
+                <li class="header__bottom-item header__bottom-item--active">
+                  <a class="header__bottom-item-link" href=""
+                    >Page
+                    <i class="header__bottom-item-icon las la-angle-down"></i
+                  ></a>
+                  <ul class="header__bottom-sub">
+                    <li class="header__bottom-sub-item">
+                      <a class="header__bottom-sub-item-link" href=""
+                        >About
+                        <i
+                          class="header__bottom-sub-icon las la-angle-right"
+                        ></i
+                      ></a>
+                      <ul class="header__bottom-sub-nav">
+                        <li class="header__bottom-sub-item">
+                          <a class="header__bottom-sub-item-link" href=""
+                            >About 1</a
+                          >
+                        </li>
+                        <li class="header__bottom-sub-item">
+                          <a class="header__bottom-sub-item-link" href=""
+                            >About 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__bottom-sub-item">
+                      <a class="header__bottom-sub-item-link" href=""
+                        >Contact</a
+                      >
+                    </li>
+                    <li class="header__bottom-sub-item">
+                      <a class="header__bottom-sub-item-link" href="">Login</a>
+                    </li>
+                    <li class="header__bottom-sub-item">
+                      <a class="header__bottom-sub-item-link" href=""
+                        >Register</a
+                      >
+                    </li>
+                    <li class="header__bottom-sub-item">
+                      <a class="header__bottom-sub-item-link" href="">404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-item-link" href=""
+                    >Blog
+                    <i class="header__bottom-item-icon las la-angle-down"></i
+                  ></a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-item-link" href=""
+                    >Element
+                    <i class="header__bottom-item-icon las la-angle-down"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="header__bottom-right">
+                <span
+                  ><i class="las la-lightbulb"></i> CLEARANCE UP TO 30%
+                  OFF</span
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End -->
+      </header>
+      <!-- End Header -->
+
+      <!-- Begin Container -->
+      <div class="app__container">
+        <div class="grid wide">
+          <div class="row">
+            <nav class="product__breadcrumb">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a href="">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <i class="header__bottom-sub-icon las la-angle-right"></i>
+                </li>
+                <li class="breadcrumb__item">
+                  <a href="">Product</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <i class="header__bottom-sub-icon las la-angle-right"></i>
+                </li>
+                <li class="breadcrumb__item">
+                  <a href="">Linen-blend jumpsuit</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="row">
+            <!-- <div class="product__page"> -->
+              <div class="col l-6">
+                <div class="product__page-media">
+                  <div class="row sm-gutter">
+                    <div class="col l-3">
+                      <div class="product__page-media-list">
+                        <button class="product__page-media-item product__page-media-item--active">
+                          <img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_2_1_300x408_8d567a8d84.jpg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="product__page-media-item">
+                          <img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_2_2_300x408_28c4a5456b.jpg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="product__page-media-item">
+                          <img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_2_3_300x408_b813eda1d9.jpg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col l-9">
+                      <figure class="product__page-media-big">
+                          <span class="product__label product__label--sale"
+                          >Sale</span
+                        >
+                        <a href=""
+                          ><img
+                            src="https://d-themes.com/react_asset_api/molla/uploads/product_2_1_194935702f.jpg"
+                            alt=""
+                        /></a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l-6">
+                  <div class="product__page-body">
+                      <h1 class="product__page-title">Linen-blend jumpsuit</h1>
+                      <div class="product__page-ratings">
+                          <div class="product__page-ratings-wrap">
+                            <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          <i class="las la-star"></i>
+                          </div>
+                          <span class="product__page-ratings-text">( 2 Reviews )</span>
+                      </div>
+                      <div class="product__page-price">
+                          <span class="product__page-price-new">$67.00 - $76.00</span>
+                          <!-- <span class="product__page-price-old"> $76.00</span> -->
+                      </div>
+                      <div class="product__page-content-short">
+                          Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+                      </div>
+                      <div class="product__page-filter product__page-colors">
+                          <label>Color:</label>
+                          <div class="product__page-colors-dots">
+                              <a href="" class="product__page-color-yellow"></a>
+                              <a href="" class="product__page-color-blue"></a>
+                          </div>
+                          </div>
+                          <div class="product__page-filter product__page-sizes">
+                              <label>Size:</label>
+                              <select name="" id="">
+                                  <option value="">Small</option>
+                                  <option value="">Medium</option>
+                                  <option value="">Large</option>
+                                  <option value="">Extra large</option>
+                              </select>
+                          </div>
+                          <div class="product__page-filter product__page-qty">
+                            <label htmlFor="qty">Qty:</label>
+                            <div class="product__input-group">
+                              <button class="product__input-minus"><i class="las la-minus"></i></button>
+                              <input type="text" class="product__input-qty">
+                              <button class="product__input-minus"><i class="las la-plus"></i></button>
+                            </div>
+                          </div>
+                          <div class="product__page-actions">
+                              <a href=""><span><i class="las la-cart-plus"></i> Add to cart</span></a>
+                              <a href=""><span><i class="lar la-heart"></i> Add to Wishlist</span></a>
+                          </div>
+                          <div class="product__page-categories">
+                              <span>Category: </span>
+                              <span><a href="">Women</a></span>,
+                              <span><a href="">Clothing</a></span>
+                          </div>
+                          <div class="product__page-socials">
+                              <span className="social-label">Share:</span>
+                              <a href=""><i class="lab la-facebook-f"></i></a>
+                              <a href=""><i class="lab la-twitter"></i></a>
+                              <a href=""><i class="lab la-instagram"></i></a>
+                              <a href=""><i class="lab la-pinterest"></i></a>
+                          </div>
+                      
+                  </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Footer -->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-6">
+                <div class="footer__about">
+                  <img
+                    src="./assets/img/logo-footer.png"
+                    alt=""
+                    class="footer__logo"
+                  />
+                  <p class="footer__about-desc">
+                    Praesent dapibus, neque id cursus ucibus, tortor neque
+                    egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+                    volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                    facilisis luctus, metus.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col lg-6">
+                    <span class="footer__about-title"
+                      >Got Question? Call us 24/7</span
+                    >
+                    <a href="+0123 456 789" class="footer__about-phone"
+                      >+0123 456 789</a
+                    >
+                  </div>
+                  <div class="col lg-6">
+                    <span class="footer__about-title">Payment Method</span>
+                    <img
+                      src="https://d-themes.com/react/molla/demo-8/images/payments.png"
+                      alt=""
+                      class="footer__about-payment"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col lg-2">
+                <div class="footer__info">
+                  <h4 class="footer__title">Information</h4>
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="">About Molla</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">How to shop on Molla</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">FAQ</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Contact us</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Log in</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col lg-2">
+                <div class="footer__info">
+                  <h4 class="footer__title">Customer Service</h4>
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="">Payment Methods</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Money-back guarantee!</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Returns</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Shipping</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Terms and conditions</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col lg-2">
+                <div class="footer__info">
+                  <h4 class="footer__title">My Account</h4>
+                  <ul class="footer__list">
+                    <li class="footer__item">
+                      <a href="">Sign In</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">View Cart</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">My Wishlist</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Track My Order</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="">Help</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="grid wide">
+            <div class="footer__line"></div>
+            <div class="row">
+              <div class="col l-6 footer__bottom-left">
+                <p class="footer__label">
+                  Copyright © 2021 Molla Store. All Rights Reserved.
+                </p>
+                <ul class="footer__term">
+                  <li class="footer__term-item">
+                    <a href="">Terms Of Use</a>
+                  </li>
+                  <li class="footer__term-item">
+                    <a href="">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col l-6 footer__bottom-right">
+                <p class="footer__label">Social Media</p>
+                <ul class="footer__socials">
+                  <li class="footer__socials-item">
+                    <a href=""><i class="lab la-facebook-f"></i></a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href=""><i class="lab la-twitter"></i></a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href=""><i class="lab la-instagram"></i></a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a href=""><i class="lab la-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End -->
+    </div>
+  </body>
+</html>
