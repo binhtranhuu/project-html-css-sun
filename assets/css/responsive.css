@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .header__mobile {
+    display: block;
+  }
+
   .home__post {
     margin-bottom: 2.4rem;
   }
@@ -75,6 +79,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+  .header__top-wrap,
+  .header__middle-wrap {
+    padding: 0 0.4rem;
+  }
   .subscribe__info-title {
     font-size: 2rem;
   }
